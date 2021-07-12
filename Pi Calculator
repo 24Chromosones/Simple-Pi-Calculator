@@ -1,0 +1,18 @@
+y = 3
+x = 1/y
+equation = 1
+addition = False
+calculation = 10000 #increase to get a more accurate number
+
+for i in range(calculation):
+    x = 1 / y
+    if addition:
+        equation = equation + x
+        addition = False
+    else:
+        equation = equation - x
+        addition = True
+    y += 2
+
+
+print(equation * 4)
